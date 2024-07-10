@@ -1,0 +1,1404 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>NYC Shelters, Are We All in This Together? &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'nyc_shelters';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">NYC Shelters, Are We All in This Together?</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnyc_shelters.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/nyc_shelters.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>NYC Shelters, Are We All in This Together?</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-data">About the Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-york-city-shelters-brooklyn-takes-the-lead">New York City Shelters: Brooklyn Takes the Lead</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#individuals-in-city-shelters-queens-reigns-supreme">Individuals in City Shelters: Queens Reigns Supreme</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#average-individuals-per-shelter-queens-remains-on-top">Average Individuals per Shelter: Queens Remains on Top</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shelters-per-capita-the-bronx-pulls-ahead">Shelters per Capita: The Bronx Pulls Ahead</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-closer-look-into-the-bronx-are-community-districts-doing-a-fair-share">A Closer Look into the Bronx: Are Community Districts Doing a Fair Share?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hypothesis-revisited">Hypothesis Revisited</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="nyc-shelters-are-we-all-in-this-together">
+<h1>NYC Shelters, Are We All in This Together?<a class="headerlink" href="#nyc-shelters-are-we-all-in-this-together" title="Link to this heading">#</a></h1>
+<img src="https://ourtimepress.com/wp-content/uploads/2017/04/Pg3_inside-the-massive-silicon-valley-homeless-shelter-the-neighbors-didnt-want-built.jpg" alt="Alternative text" img style='height: 450px; width: 2000px; object-fit: cover'/><p>By <a class="reference external" href="https://www.linkedin.com/in/ceinnalittle/">Ceinna Little</a></p>
+<p>As housing prices increase, low-income, vulnerable populations experience an increased risk of homelessness and may find themselves in one of the city’s shelters. While some boroughs are more expensive than others, and thus contribute more to unaffordable housing, it is important for each borough to shoulder the burden equally so as to not overwhelm any given shelter system within city. But is this currently the reality?</p>
+<p>Using data from the Department of Homeless Services (DHS) and the Department of City Planning (DCP), I examined which borough(s) had the most shelters and individuals in their shelter system. I then looked at population data to determine how many shelters per capita each borough had. From this, I isolated one borough to examine the distribution across community districts.</p>
+<p>I wanted to know which borough, if any, had the most shelters/individuals in their shelter system and if this distribution was equal across community districts. I hypothesize that either the Bronx or Brooklyn would have the most shelters/individuals in their shelter system due to New York’s history with pushing locally unwanted land uses (LULUs) to those boroughs. I also hypothesize that there will be a discrepancy in the shelter distribution among community districts.</p>
+<p>As you will see, my hypotheses were partially proven right. The Bronx and Brooklyn were among the highest in terms of shelters and individuals; however, Queens had the most individuals in their shelters system. The Bronx, however, had the most shelters per capita and had an uneven distribution of shelters across its community districts. Exploring why that may be is an area of future study.</p>
+<section id="about-the-data">
+<h2>About the Data<a class="headerlink" href="#about-the-data" title="Link to this heading">#</a></h2>
+<p>Three datasets were used in this analysis:</p>
+<p>The first dataset is <a class="reference external" href="https://data.cityofnewyork.us/Social-Services/Buildings-by-Borough-and-Community-District/3qem-6v3v/about_data">Buildings by Borough and Community District</a>. It displays the total number of shelter buildings by borough and community district. There are <strong>seven</strong> types of shelters listed within the dataset: Adult Family Commercial Hotel, Adult Family Shelter, Adult Shelter, Adult Shelter Commercial Hotel, Family Cluster, Family with Children Commercial Hotel, and Family with Children Shelter.</p>
+<p>The second dataset is <a class="reference external" href="https://data.cityofnewyork.us/Social-Services/Individual-Census-by-Borough-Community-District-an/veav-vj3r/about_data">Individual Census by Borough, Community District, and Facility Type</a>. It presents the number of individuals for each shelter facility type by borough and community district. It is broken down by the same seven types of shelters and includes counts from different days. For this analysis, the most recent count (<strong>March 31, 2024</strong>) was used.</p>
+<p>The third dataset is <a class="reference external" href="https://data.cityofnewyork.us/City-Government/New-York-City-Population-by-Borough-1950-2040/xywu-7bv9/about_data">New York City Population by Borough, 1950 - 2040</a>. It provides the unadjusted decennial census data from 1950-2000 and projected figures from 2010-2040.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Step 1: import important packages for data analysis</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># total number of shelter buildings by borough and community district</span>
+<span class="n">shelters</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Buildings_by_Borough_and_Community_District.csv&quot;</span><span class="p">)</span>
+<span class="c1"># shelters.head()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># total number of shelter buildings by borough and community district</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">shelters</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Buildings_by_Borough_and_Community_District.csv&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># shelters.head()</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/test-dXw9hffu-py3.10/lib/python3.10/site-packages/pandas/io/parsers/readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/test-dXw9hffu-py3.10/lib/python3.10/site-packages/pandas/io/parsers/readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/test-dXw9hffu-py3.10/lib/python3.10/site-packages/pandas/io/parsers/readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/test-dXw9hffu-py3.10/lib/python3.10/site-packages/pandas/io/parsers/readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~/.cache/pypoetry/virtualenvs/test-dXw9hffu-py3.10/lib/python3.10/site-packages/pandas/io/common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;Buildings_by_Borough_and_Community_District.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># number of individuals for each shelter facility type by borough and community district</span>
+<span class="n">individuals</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Individual_Census_by_Borough__Community_District__and_Facility_Type.csv&quot;</span><span class="p">)</span>
+<span class="c1"># individuals.head()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">population</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;New_York_City_Population_by_Borough.csv&quot;</span><span class="p">)</span>
+<span class="c1"># population</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="new-york-city-shelters-brooklyn-takes-the-lead">
+<h2>New York City Shelters: Brooklyn Takes the Lead<a class="headerlink" href="#new-york-city-shelters-brooklyn-takes-the-lead" title="Link to this heading">#</a></h2>
+<p>In order to begin my analysis, I first needed to change ‘NaN’ values to 0. This would allow me to get a count of the total number of shelters per community district without errors. Once a ‘total_cd_shelters’ column was made by adding all shelter types together across the row, I grouped the dataframe by borough and summed all community district shelters in the district together. The new total is represented in the ‘shelter_count’ column. I then made the boroughs the index (first column) of the dataframe and removed the row for Westchester, since it is not a borough but was included in the data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change NaN values to 0</span>
+<span class="n">shelters</span> <span class="o">=</span> <span class="n">shelters</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1"># shelters</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add column to get total shelter counts by community district</span>
+<span class="n">shelters</span><span class="p">[</span><span class="s1">&#39;total_cd_shelters&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">shelters</span><span class="p">[</span><span class="s1">&#39;Adult Family Comm Hotel&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">shelters</span><span class="p">[</span><span class="s1">&#39;Adult Family Shelter&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">shelters</span><span class="p">[</span><span class="s1">&#39;Adult Shelter&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">shelters</span><span class="p">[</span><span class="s1">&#39;Adult Shelter Comm Hotel&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">shelters</span><span class="p">[</span><span class="s1">&#39;FWC Cluster&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">shelters</span><span class="p">[</span><span class="s1">&#39;FWC Comm Hotel&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">shelters</span><span class="p">[</span><span class="s1">&#39;FWC Shelter&#39;</span><span class="p">]</span>
+<span class="c1"># shelters.head()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Group by and generate sum of shelter buildings by borough</span>
+<span class="n">borough_shelters</span> <span class="o">=</span> <span class="n">shelters</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Borough&#39;</span><span class="p">])[</span><span class="s1">&#39;total_cd_shelters&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;shelter_count&quot;</span><span class="p">)</span>
+<span class="n">borough_shelters</span> <span class="o">=</span> <span class="n">borough_shelters</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">borough_shelters</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>shelter_count</th>
+    </tr>
+    <tr>
+      <th>Borough</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bronx</th>
+      <td>132.0</td>
+    </tr>
+    <tr>
+      <th>Brooklyn</th>
+      <td>148.0</td>
+    </tr>
+    <tr>
+      <th>Manhattan</th>
+      <td>94.0</td>
+    </tr>
+    <tr>
+      <th>Queens</th>
+      <td>116.0</td>
+    </tr>
+    <tr>
+      <th>Staten Island</th>
+      <td>8.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Brooklyn has the most shelters of all boroughs with 148, and the Bronx has the second most with 132. Staten Island has the least with just 8 shelters within the borough and, surprisingly to me, Manhattan has the second least with just 94.</p>
+<p>To help visualize this discrepancy, I plotted the counts in a histogram with discrete coloring that will be consistent throughout the analysis.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">color_discrete_map</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Bronx&#39;</span><span class="p">:</span> <span class="s1">&#39;#D00000&#39;</span><span class="p">,</span> <span class="s1">&#39;Brooklyn&#39;</span><span class="p">:</span> <span class="s1">&#39;#FFBA08&#39;</span><span class="p">,</span><span class="s1">&#39;Manhattan&#39;</span><span class="p">:</span> <span class="s1">&#39;#3F88C5&#39;</span><span class="p">,</span> <span class="s1">&#39;Queens&#39;</span><span class="p">:</span> <span class="s1">&#39;#032B43&#39;</span><span class="p">,</span> <span class="s1">&#39;Staten Island&#39;</span><span class="p">:</span> <span class="s1">&#39;#136F63&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">borough_shelters</span><span class="p">,</span>
+                   <span class="n">x</span><span class="o">=</span><span class="n">borough_shelters</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">y</span><span class="o">=</span><span class="s1">&#39;shelter_count&#39;</span><span class="p">,</span>
+                   <span class="n">color</span> <span class="o">=</span> <span class="n">borough_shelters</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">color_discrete_map</span><span class="o">=</span><span class="n">color_discrete_map</span><span class="p">,</span>
+                   <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Total Shelters by Borough&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">&quot;# of Shelters&quot;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">),</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="individuals-in-city-shelters-queens-reigns-supreme">
+<h2>Individuals in City Shelters: Queens Reigns Supreme<a class="headerlink" href="#individuals-in-city-shelters-queens-reigns-supreme" title="Link to this heading">#</a></h2>
+<p>I completed the same steps as above, but this time used individuals recorded in the shelter system on March 31, 2024.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change NaN values to 0</span>
+<span class="n">individuals</span> <span class="o">=</span> <span class="n">individuals</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1"># individuals</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add column to get total individual counts by community district</span>
+<span class="n">individuals</span><span class="p">[</span><span class="s1">&#39;total_cd_individuals&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">individuals</span><span class="p">[</span><span class="s1">&#39;Adult Family Commercial Hotel&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">individuals</span><span class="p">[</span><span class="s1">&#39;Adult Family Shelter&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">individuals</span><span class="p">[</span><span class="s1">&#39;Adult Shelter&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">individuals</span><span class="p">[</span><span class="s1">&#39;Adult Shelter Commercial Hotel&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">individuals</span><span class="p">[</span><span class="s1">&#39;Family Cluster&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">individuals</span><span class="p">[</span><span class="s1">&#39;Family with Children Commercial Hotel&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">individuals</span><span class="p">[</span><span class="s1">&#39;Family with Children Shelter&#39;</span><span class="p">]</span>
+<span class="c1"># individuals.head()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Group by and generate sum of individuals in shelters by borough</span>
+<span class="n">borough_individuals</span> <span class="o">=</span> <span class="n">individuals</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Borough&#39;</span><span class="p">])[</span><span class="s1">&#39;total_cd_individuals&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;individual_count&quot;</span><span class="p">)</span>
+<span class="n">borough_individuals</span> <span class="o">=</span> <span class="n">borough_individuals</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">borough_individuals</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>individual_count</th>
+    </tr>
+    <tr>
+      <th>Borough</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bronx</th>
+      <td>20009.0</td>
+    </tr>
+    <tr>
+      <th>Brooklyn</th>
+      <td>22537.0</td>
+    </tr>
+    <tr>
+      <th>Manhattan</th>
+      <td>15739.0</td>
+    </tr>
+    <tr>
+      <th>Queens</th>
+      <td>25667.0</td>
+    </tr>
+    <tr>
+      <th>Staten Island</th>
+      <td>1184.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Queens had the most individuals in its shelter system at 25,667. Brooklyn was closely behind with 22,537. Staten Island and Manhattan had the least with 1,184 and 15,739 individuals, respectively.</p>
+<p>To visualize this I, again, plotted a histogram with using the same color scheme as before.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">borough_individuals</span><span class="p">,</span>
+                   <span class="n">x</span><span class="o">=</span><span class="n">borough_individuals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">y</span><span class="o">=</span><span class="s1">&#39;individual_count&#39;</span><span class="p">,</span>
+                   <span class="n">color</span> <span class="o">=</span> <span class="n">borough_individuals</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">color_discrete_map</span><span class="o">=</span><span class="n">color_discrete_map</span><span class="p">,</span>
+                   <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Individuals in Shelters by Borough&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">&quot;# of Individuals in Shelters&quot;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="average-individuals-per-shelter-queens-remains-on-top">
+<h2>Average Individuals per Shelter: Queens Remains on Top<a class="headerlink" href="#average-individuals-per-shelter-queens-remains-on-top" title="Link to this heading">#</a></h2>
+<p>To get a clearer picture of the capacity in each borough’s shelter, I merged the shelter and individual data into one dataframe. I then created a new column where I calculated the average number of individuals per shelter.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">borough_merge</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">borough_shelters</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="n">borough_individuals</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Borough&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Borough&quot;</span><span class="p">)</span>
+<span class="c1"># borough_merge</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#calculate average individuals per shelter and round to the nearest integer</span>
+<span class="n">borough_merge</span><span class="p">[</span><span class="s2">&quot;shelter_avg&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">borough_merge</span><span class="p">[</span><span class="s2">&quot;individual_count&quot;</span><span class="p">]</span><span class="o">/</span><span class="n">borough_merge</span><span class="p">[</span><span class="s2">&quot;shelter_count&quot;</span><span class="p">])</span>
+<span class="n">borough_merge</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>shelter_count</th>
+      <th>individual_count</th>
+      <th>shelter_avg</th>
+    </tr>
+    <tr>
+      <th>Borough</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bronx</th>
+      <td>132.0</td>
+      <td>20009.0</td>
+      <td>152.0</td>
+    </tr>
+    <tr>
+      <th>Brooklyn</th>
+      <td>148.0</td>
+      <td>22537.0</td>
+      <td>152.0</td>
+    </tr>
+    <tr>
+      <th>Manhattan</th>
+      <td>94.0</td>
+      <td>15739.0</td>
+      <td>167.0</td>
+    </tr>
+    <tr>
+      <th>Queens</th>
+      <td>116.0</td>
+      <td>25667.0</td>
+      <td>221.0</td>
+    </tr>
+    <tr>
+      <th>Staten Island</th>
+      <td>8.0</td>
+      <td>1184.0</td>
+      <td>148.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Queens was still in the lead with an average of 221 individuals per shelter. Surprisingly, Manhattan was second place with an average of 167 individuals per shelter. So, while Manhattan has one of the least amounts of shelters and individuals in shelters, it operates its shelters with a high capacity.</p>
+<p>Staten Island is again in last place with 148 individuals per shelter, while Brooklyn and the Bronx are tied with 152 individuals per shelter.</p>
+<p>Below is a visualization of the data using the same techniques as before.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">borough_merge</span><span class="p">,</span>
+                   <span class="n">x</span><span class="o">=</span><span class="n">borough_merge</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">y</span><span class="o">=</span><span class="s1">&#39;shelter_avg&#39;</span><span class="p">,</span>
+                   <span class="n">color</span> <span class="o">=</span> <span class="n">borough_merge</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">color_discrete_map</span><span class="o">=</span><span class="n">color_discrete_map</span><span class="p">,</span>
+                   <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Average Number of Individuals per Shelter by Borough&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">&quot;Avg. Individuals in Shelters&quot;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Compared to the other boroughs, Queens stands out. This may display a capacity issue is present in the borough.</p>
+</section>
+<section id="shelters-per-capita-the-bronx-pulls-ahead">
+<h2>Shelters per Capita: The Bronx Pulls Ahead<a class="headerlink" href="#shelters-per-capita-the-bronx-pulls-ahead" title="Link to this heading">#</a></h2>
+<p>To get a better understanding of how fairly shelters are distributed across the borough, I looked at population data. The data had to be cleaned prior to analysis, which included keeping the two columns I wanted to analyze (‘Borough’ for merging purposes and 2020 population data) and deleting the rest, removing extra white space from the boroughs and making the boroughs the index of the dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Borough&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;2020&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">clean_pop</span> <span class="o">=</span> <span class="n">population</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span>
+<span class="n">clean_pop</span> <span class="o">=</span> <span class="n">clean_pop</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># clean_pop</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clean_pop</span><span class="p">[</span><span class="s1">&#39;Borough&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;   Bronx&#39;, &#39;   Brooklyn&#39;, &#39;   Manhattan&#39;, &#39;   Queens&#39;,
+       &#39;   Staten Island&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#remove extra white space from population dataframe</span>
+<span class="k">def</span> <span class="nf">whitespace_remover</span><span class="p">(</span><span class="n">dataframe</span><span class="p">):</span>
+ 
+    <span class="c1"># iterating over the columns</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+ 
+        <span class="c1"># checking datatype of each columns</span>
+        <span class="k">if</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="s1">&#39;object&#39;</span><span class="p">:</span>
+ 
+            <span class="c1"># applying strip function on column</span>
+            <span class="n">dataframe</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">strip</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+ 
+            <span class="c1"># if condn. is False then it will do nothing.</span>
+            <span class="k">pass</span>
+
+<span class="n">whitespace_remover</span><span class="p">(</span><span class="n">clean_pop</span><span class="p">)</span>
+<span class="n">clean_pop</span> <span class="o">=</span> <span class="n">clean_pop</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s2">&quot;Borough&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>After cleaning the data, I merge the population dataframe to the shelters dataframe. I then calculated the shelters per capita by dividing the number of shelters by the population per borough.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">borough_pop</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">borough_shelters</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="n">clean_pop</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Borough&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Borough&quot;</span><span class="p">)</span>
+
+<span class="n">borough_pop</span><span class="p">[</span><span class="s2">&quot;shelters_per_capita&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">borough_pop</span><span class="p">[</span><span class="s2">&quot;shelter_count&quot;</span><span class="p">]</span><span class="o">/</span><span class="n">borough_pop</span><span class="p">[</span><span class="s2">&quot;2020&quot;</span><span class="p">]</span>
+<span class="n">borough_pop</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>shelter_count</th>
+      <th>2020</th>
+      <th>shelters_per_capita</th>
+    </tr>
+    <tr>
+      <th>Borough</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bronx</th>
+      <td>132.0</td>
+      <td>1446788</td>
+      <td>0.000091</td>
+    </tr>
+    <tr>
+      <th>Brooklyn</th>
+      <td>148.0</td>
+      <td>2648452</td>
+      <td>0.000056</td>
+    </tr>
+    <tr>
+      <th>Manhattan</th>
+      <td>94.0</td>
+      <td>1638281</td>
+      <td>0.000057</td>
+    </tr>
+    <tr>
+      <th>Queens</th>
+      <td>116.0</td>
+      <td>2330295</td>
+      <td>0.000050</td>
+    </tr>
+    <tr>
+      <th>Staten Island</th>
+      <td>8.0</td>
+      <td>487155</td>
+      <td>0.000016</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Looking at the table, it can be seen that the Bronx has the highest per capita rate of the boroughs. Staten Island remains in last place with Queens coming before it. Manhattan and Brooklyn are second and third, respectively, having similar rates as one another.</p>
+<p>I visualized this in a histogram to better see the distinction.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">borough_pop</span><span class="p">,</span>
+                   <span class="n">x</span><span class="o">=</span> <span class="n">borough_pop</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">y</span><span class="o">=</span><span class="s1">&#39;shelters_per_capita&#39;</span><span class="p">,</span>
+                   <span class="n">color</span> <span class="o">=</span> <span class="n">borough_pop</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">color_discrete_map</span><span class="o">=</span><span class="n">color_discrete_map</span><span class="p">,</span>
+                   <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Number of Shelters per Capita by Borough&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">&quot;Shelters per Capita&quot;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>The Bronx is securely in first place with the most number of shelters per capita. This showcases an uneven distribution of shelters which presents an equity problem.</p>
+</section>
+<section id="a-closer-look-into-the-bronx-are-community-districts-doing-a-fair-share">
+<h2>A Closer Look into the Bronx: Are Community Districts Doing a Fair Share?<a class="headerlink" href="#a-closer-look-into-the-bronx-are-community-districts-doing-a-fair-share" title="Link to this heading">#</a></h2>
+<p>While it has been established that the Bronx has more shelters per capita than any other borough by a significant margin, I wanted to look closer on a community district level to see if there are any discrepancies present.</p>
+<p>To start, I returned to the original ‘shelters’ and ‘individuals’ dataframes and isolated the Bronx. I then included only the columns I wanted to analyze (community districts and total shelters or individuals). I then changed the ‘Community District’ to an integer in the ‘shelters’ dataframe to get rid of the decimal place, then back to a string. This was done because in the ‘individuals’ dataframe the ‘Community Districts’ column did not match the ‘Community District’ column of the ‘shelters’ dataframe.</p>
+<p>To rectify this, in the ‘individuals’ dataframe I created a formula that (1) turned the ‘Community Districts’ column into integers to get rid of the decimal place, (2) turned it back to a string in order to (3) add the Bronx code ‘2’ in front of the community district number and a ‘0’ in the number was single digit. This formula was then applied across all rows, which adapted the dataframe and allowed it to be merged with the ‘shelters’ dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Step 5: Focus on the Bronx, determine if any community districts are bearing an uneven load of shelters</span>
+
+<span class="n">bronx_shelters</span> <span class="o">=</span> <span class="n">shelters</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;Borough==&#39;Bronx&#39;&quot;</span><span class="p">)</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Community District&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;total_cd_shelters&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">bronx_shelters</span> <span class="o">=</span> <span class="n">bronx_shelters</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span>
+<span class="n">bronx_shelters</span><span class="p">[</span><span class="s2">&quot;Community District&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bronx_shelters</span><span class="p">[</span><span class="s2">&quot;Community District&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">bronx_shelters</span><span class="p">[</span><span class="s2">&quot;Community District&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bronx_shelters</span><span class="p">[</span><span class="s2">&quot;Community District&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+<span class="c1"># bronx_shelters</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bronx_individuals</span> <span class="o">=</span> <span class="n">individuals</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;Borough==&#39;Bronx&#39;&quot;</span><span class="p">)</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Community Districts&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;total_cd_individuals&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">bronx_individuals</span> <span class="o">=</span> <span class="n">bronx_individuals</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span>
+<span class="c1"># bronx_individuals</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">recode_bronx_cd</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;2&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;Community Districts&#39;</span><span class="p">]))</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">bronx_individuals</span><span class="p">[</span><span class="s2">&quot;Community Districts&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bronx_individuals</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">recode_bronx_cd</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># bronx_individuals</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bronx_merge</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">bronx_shelters</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="n">bronx_individuals</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Community District&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Community Districts&quot;</span><span class="p">)</span>
+<span class="n">bronx_merge</span> <span class="o">=</span> <span class="n">bronx_merge</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Community Districts&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;Community District&#39;</span><span class="p">])</span>
+<span class="n">bronx_merge</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>total_cd_shelters</th>
+      <th>total_cd_individuals</th>
+    </tr>
+    <tr>
+      <th>Community District</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>201</th>
+      <td>15.0</td>
+      <td>2226.0</td>
+    </tr>
+    <tr>
+      <th>202</th>
+      <td>6.0</td>
+      <td>971.0</td>
+    </tr>
+    <tr>
+      <th>203</th>
+      <td>15.0</td>
+      <td>2178.0</td>
+    </tr>
+    <tr>
+      <th>204</th>
+      <td>17.0</td>
+      <td>2897.0</td>
+    </tr>
+    <tr>
+      <th>205</th>
+      <td>15.0</td>
+      <td>2697.0</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>27.0</td>
+      <td>3216.0</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>13.0</td>
+      <td>1656.0</td>
+    </tr>
+    <tr>
+      <th>208</th>
+      <td>1.0</td>
+      <td>213.0</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>10.0</td>
+      <td>1728.0</td>
+    </tr>
+    <tr>
+      <th>210</th>
+      <td>3.0</td>
+      <td>536.0</td>
+    </tr>
+    <tr>
+      <th>211</th>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>212</th>
+      <td>10.0</td>
+      <td>1691.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>In total, there are 12 community districts in the Bronx.</p>
+<p>It is a little hard to see the differences when displayed in a table, so I plotted the shelter values in the histogram below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">bronx_merge</span><span class="p">,</span>
+                   <span class="n">x</span><span class="o">=</span> <span class="n">bronx_merge</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">y</span><span class="o">=</span><span class="s1">&#39;total_cd_shelters&#39;</span><span class="p">,</span>
+                   <span class="n">color</span> <span class="o">=</span> <span class="n">bronx_merge</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Number of Shelters in Bronx Community Districts&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">&quot;# of Shelters&quot;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">),</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Bronx Community District 6 has overwhelmingly the most shelters with 27. The community district with the second most shelters has 10 less with 17 shelters. Community District 11 has the least with 0. So, there is a clear discrepancy between community districts.</p>
+<p>I plotted the individual values in a similar histogram, and the results were a little more equitable than before (although not by a lot).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">bronx_merge</span><span class="p">,</span>
+                   <span class="n">x</span><span class="o">=</span> <span class="n">bronx_merge</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">y</span><span class="o">=</span><span class="s1">&#39;total_cd_individuals&#39;</span><span class="p">,</span>
+                   <span class="n">color</span> <span class="o">=</span> <span class="n">bronx_merge</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                   <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Number of Individuals in Shelters in Bronx Community Districts&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">&quot;# of Individuals&quot;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">),</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Bronx Community District 6 is still in the lead with the most individuals in its shelter system with 3,216. However, the other community districts are not as far behind as before (Community District 4 is second with 2,897). Community District 11 is still in last place with 0 individuals in shelters, which is unsurprising since no shelters exist in the community district. A more interesting question would be ‘why’.</p>
+<p>In order to contextually visualize the difference, I mapped the number of shelters and individuals by color.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://data.cityofnewyork.us/resource/jp9i-3b7y.geojson&quot;</span><span class="p">)</span>
+<span class="n">shapes</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;loaded&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>loaded
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_bronx_shelters</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth_mapbox</span><span class="p">(</span>
+        <span class="n">df</span><span class="p">,</span>
+        <span class="n">locations</span><span class="o">=</span><span class="n">bronx_merge</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>  <span class="c1"># column name to match on</span>
+        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;total_cd_shelters&quot;</span><span class="p">,</span>  <span class="c1"># column name for values</span>
+        <span class="n">geojson</span><span class="o">=</span><span class="n">shapes</span><span class="p">,</span>
+        <span class="n">featureidkey</span><span class="o">=</span><span class="s2">&quot;properties.boro_cd&quot;</span><span class="p">,</span>  <span class="c1"># GeoJSON property to match on</span>
+        <span class="n">center</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;lat&quot;</span><span class="p">:</span> <span class="mf">40.85873</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">73.84927</span><span class="p">},</span>
+        <span class="n">zoom</span><span class="o">=</span><span class="mf">10.7</span><span class="p">,</span>
+        <span class="n">mapbox_style</span><span class="o">=</span><span class="s2">&quot;carto-positron&quot;</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Number of Shelters in Bronx Community Districts&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_bronx_shelters</span><span class="p">(</span><span class="n">bronx_merge</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_bronx_individuals</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth_mapbox</span><span class="p">(</span>
+        <span class="n">df</span><span class="p">,</span>
+        <span class="n">locations</span><span class="o">=</span><span class="n">bronx_merge</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>  <span class="c1"># column name to match on</span>
+        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;total_cd_individuals&quot;</span><span class="p">,</span>  <span class="c1"># column name for values</span>
+        <span class="n">geojson</span><span class="o">=</span><span class="n">shapes</span><span class="p">,</span>
+        <span class="n">featureidkey</span><span class="o">=</span><span class="s2">&quot;properties.boro_cd&quot;</span><span class="p">,</span>  <span class="c1"># GeoJSON property to match on</span>
+        <span class="n">center</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;lat&quot;</span><span class="p">:</span> <span class="mf">40.85873</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">73.84927</span><span class="p">},</span>
+        <span class="n">zoom</span><span class="o">=</span><span class="mf">10.7</span><span class="p">,</span>
+        <span class="n">mapbox_style</span><span class="o">=</span><span class="s2">&quot;carto-positron&quot;</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Number of Shelters in Bronx Community Districts&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_bronx_individuals</span><span class="p">(</span><span class="n">bronx_merge</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>The maps showcase how little the change from the number of shelters and the number of individuals in shelters is across community districts.</p>
+</section>
+<section id="hypothesis-revisited">
+<h2>Hypothesis Revisited<a class="headerlink" href="#hypothesis-revisited" title="Link to this heading">#</a></h2>
+<p>Per my hypothesis, I predicted that either Brooklyn or the Bronx would have the most shelters and individuals in the shelter system. While I was mostly right, Queens did have the most individuals and average individuals per shelter. The Bronx did, however, have the most shelters per capita.</p>
+<p>Additionally, the Bronx’s community districts had an uneven distribution of shelters across the borough. This brings more questions that could lead to why there is such a huge discrepancy: (1) what are the poverty rates in the area?, (2) what is the rent/owner makeup of the area?, (3) what is the racial composition of the area?, <em>et cetera</em>. These are all areas for future study that could expand the understanding of how New York City is distributing the work of assisting its unhoused population, and they are important to know if the goal is equity in the distribution of resources.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-data">About the Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-york-city-shelters-brooklyn-takes-the-lead">New York City Shelters: Brooklyn Takes the Lead</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#individuals-in-city-shelters-queens-reigns-supreme">Individuals in City Shelters: Queens Reigns Supreme</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#average-individuals-per-shelter-queens-remains-on-top">Average Individuals per Shelter: Queens Remains on Top</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shelters-per-capita-the-bronx-pulls-ahead">Shelters per Capita: The Bronx Pulls Ahead</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-closer-look-into-the-bronx-are-community-districts-doing-a-fair-share">A Closer Look into the Bronx: Are Community Districts Doing a Fair Share?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hypothesis-revisited">Hypothesis Revisited</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
