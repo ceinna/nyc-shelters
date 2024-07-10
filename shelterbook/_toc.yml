@@ -4,4 +4,4 @@
 format: jb-book
 root: intro
 chapters:
-- file: nyc_shelters.ipynb
+- file: analysis.ipynb
